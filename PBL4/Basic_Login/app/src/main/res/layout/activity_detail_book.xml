@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.detailBookActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_toolbar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EFEFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgleft_detailbook"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_chevron_left_24"
+            android:backgroundTint="#000000" />
+
+        <TextView
+            android:id="@+id/tvtitleofBook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="Dế mèn phiêu lưu ký"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="668dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/material_dynamic_neutral_variant100"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_toolbar_detail">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvimgbook"
+            android:layout_width="250dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="100dp">
+
+            <TextView
+                android:id="@+id/tvurl"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:id="@+id/imgbook_cv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/male" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvsoluong_book"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="SL:"
+            android:textColor="#E2FB7777"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnameofbook_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="Dế mèn phiêu lưu ký"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameofauthor_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="Tác giả: "
+                android:textColor="#6A6A6A"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/money_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="9999$"
+                android:textColor="#C69B1C"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsbook_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="Đây là sách dế mèn phiêu lưu ký, được xuất bản năm xxxx của nhà văn abc, truyện kể về chú dế haha"
+                android:textColor="#6A6A6A"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="150dp"
+                app:cardElevation="100dp">
+
+                <Button
+                    android:id="@+id/btBuyBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Mua hàng" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="150dp"
+                app:cardElevation="50dp">
+
+                <Button
+                    android:id="@+id/btaddtocart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Thêm vào giỏ hàng" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

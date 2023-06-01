@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imgbook_viewholder_cart"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_margin="4dp"
+        android:paddingTop="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/demen" />
+
+    <TextView
+        android:id="@+id/tv_title_viewholder_cart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Dế mèn phiêu lưu ký"
+        android:textColor="#373b54"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgbook_viewholder_cart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_gia1_viewholder_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingRight="15dp"
+        android:text="0đ"
+        android:textColor="#808187"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title_viewholder_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_viewholder_cart" />
+
+    <TextView
+        android:id="@+id/tv_soluongconlai_viewholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:text="SL: 10"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgbook_viewholder_cart"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_viewholder_cart" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/imgbook_viewholder_cart"
+        app:layout_constraintTop_toBottomOf="@+id/tv_soluongconlai_viewholder">
+
+        <Button
+            android:id="@+id/bt_minus_soluong_viewholder"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAA700"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_soluong_viewholder"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="99999"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/bt_add_soluong_viewholder"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAA700"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_giasl_viewholder_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingRight="15dp"
+        android:text="0đ"
+        android:textColor="#808187"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/bt_remove_item_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#FD0303"
+        android:gravity="center"
+        android:text="Xoá"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imgbook_viewholder_cart"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="Open_drawler">"Mở menu</string>
+    <string name="Close_Drawler">"Đóng menu</string>
+    <string name="app_name">Basic_Login</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="cato">Thể loại</string>
+    <string name="other">Mục khác</string>
+    <string name="aboutus">Giới thiệu</string>
+    <string name="support">Hỗ trợ</string>
+    <string name="logout">Thoát</string>
+    <string name="title_activity_change_password">changePassword</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="change_password">Change Password</string>
+    <string name="current">Current</string>
+    <string name="new_password">New password</string>
+    <string name="current_password">Current password</string>
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_drawertoolbar">drawertoolbar_activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home">Trang chủ</string>
+</resources>
